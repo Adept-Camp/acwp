@@ -1,0 +1,134 @@
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+//colors
+$theme-color: #2C2C2C;
+$secondary-theme-color: #6D6D6D;
+$third-theme-color: #424562;
+$white: #ffffff;
+$black: #000000;
+$light-grey: #EBEBEB;
+$dark-grey: #656565;
+
+//colors - components
+$tag-main: $light-grey;
+$tag-normal: $white;
+
+//Mixin
+@mixin anchors {
+  text-decoration: none;
+  color: $theme-color;
+}
+
+
+.copy.icon {
+  margin: 0 8px;
+  
+  &::before { 
+    content: "" !important;
+    background-image: url('../img/copy-icon.svg') !important;
+    width: 18px;
+    height: 21px;
+    display: block;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+}
+
+//colors
+.green {
+ background-color:#21ba45 !important;
+ color: $white !important;
+
+ a,
+ a * {
+   &:hover,
+   &:focus,
+   &:active {
+     background-color:#21ba45 !important;
+      color: $white !important;
+   }
+ }
+
+}
+.pink {
+ background-color:#e03997 !important;
+ color: $white !important;
+ a,
+ a * {
+   &:hover,
+   &:focus,
+   &:active {
+     background-color:#e03997 !important;
+      color: $white !important;
+   }
+ }
+}
+.yellow {
+ background-color:#fbbd08 !important;
+ color: $white !important;
+ a,
+ a * {
+   &:hover,
+   &:focus,
+   &:active {
+     background-color:#fbbd08 !important;
+      color: $white !important;
+   }
+ }
+}
+.purple {
+ background-color:#a333c8 !important;
+ color: $white !important;
+ a,
+ a * {
+   &:hover,
+   &:focus,
+   &:active {
+     background-color:#a333c8 !important;
+      color: $white !important;
+   }
+ }
+}
+.blue {
+ background-color:#69b2f1 !important;
+ color: $white !important;
+ a,
+ a * {
+   &:hover,
+   &:focus,
+   &:active {
+     background-color:#69b2f1 !important;
+      color: $white !important;
+   }
+ }
+}
+.grey {
+ background-color:#999999 !important;
+ color: $white !important;
+ a,
+ a * {
+   &:hover,
+   &:focus,
+   &:active {
+     background-color:#999999 !important;
+      color: $white !important;
+   }
+ }
+}
+.teal {
+ background-color:#48a9a6 !important;
+ color: $white !important;
+ a,
+ a * {
+   &:hover,
+   &:focus,
+   &:active {
+     background-color:#48a9a6 !important;
+      color: $white !important;
+   }
+ }
+}
+
+

@@ -1,0 +1,151 @@
+.has-background-white .site .the-tag a:focus:not(.wp-block-button__link):not(.wp-block-file__button),
+.has-background-white .site a.the-tag:focus:not(.wp-block-button__link):not(.wp-block-file__button)  {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.the-tag {
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 34px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 14px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  @include anchors;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    @include anchors;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.main-tag {
+    background-color: $tag-main;
+    color: $white;
+
+    a {
+      color: $white;
+      margin-left: 10px;
+    }
+
+    a {
+
+      .tag-main-text {
+        background-color: $tag-main;
+        color: $white;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $tag-main;
+        color: $white;
+      }
+    }
+  }
+
+  &.normal-tag {
+    background-color: $tag-normal;
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.20);
+
+  }
+
+  &.black-tag {
+    background-color: $black;
+
+    .tag-main-text {
+      color: $white;
+    }
+
+    a {
+
+      .tag-main-text {
+         background-color: $black;
+        color: $white;
+      }
+
+      &:hover,
+      &:active {
+         background-color: $black;
+        color: $white;
+      }
+    }
+  }
+
+  &.yellow-tag {
+    background-color: $fourd-theme-color;
+
+    .tag-main-text {
+      color: $black;
+    }
+
+    a {
+
+      .tag-main-text {
+         background-color: $fourd-theme-color;
+        color: $black;
+      }
+
+      &:hover,
+      &:active {
+         background-color: $fourd-theme-color;
+        color: $black;
+      }
+    }
+  }
+
+  &.large-text {
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    min-height: 34px;
+
+    .gen-title {
+      margin-right: 10px;
+    }
+
+    @media (min-width: 768px) {
+      padding: 0 10px;
+    }
+  }
+
+  .avatar {
+    margin-right: 0;
+  }
+
+  .tag-main-text {
+    padding: 0 10px;
+    font-weight: 600;
+  }
+
+  .tag-text {
+    padding: 0 10px;
+    color: $dark-grey;
+  }
+
+  .detail {
+    display: flex;
+  }
+}

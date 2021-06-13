@@ -1,0 +1,119 @@
+.has-background-white .site .the-tag a:focus:not(.wp-block-button__link):not(.wp-block-file__button),
+.has-background-white .site a.the-tag:focus:not(.wp-block-button__link):not(.wp-block-file__button)  {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.the-tag {
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 34px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  @include anchors;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    @include anchors;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.main-tag {
+    background-color: $tag-main;
+
+    a {
+      margin-left: 10px;
+
+      .tag-main-text {
+        background-color: $tag-main;
+      }
+
+      &:hover,
+      &:active {
+        background-color: $tag-main;
+      }
+    }
+  }
+
+  &.normal-tag {
+    background-color: $tag-normal;
+    box-shadow: 0 0 7px 0 rgba(0,0,0,0.20);
+    color: $black;
+  }
+
+  &.white-tag {
+    background-color: $white;
+
+    &.right-aligned {
+      margin-left: auto;
+    }
+
+    .tag-main-text {
+       background-color: $white;
+    }
+
+    a {
+      &:hover,
+      &:active {
+        background-color: $white;
+      }
+    }
+
+    .tag-main-text {
+      color: $black;
+    }
+  }
+
+  &.large-text {
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: auto;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    min-height: 34px;
+
+    @media (min-width: 768px) {
+      padding: 0 10px;
+    }
+  }
+
+  .avatar {
+    margin-right: 0;
+  }
+
+  .tag-main-text {
+    padding: 0 10px;
+    font-weight: 700;
+  }
+
+  .tag-text {
+    padding: 0 10px;
+    color: $dark-grey;
+  }
+
+  .detail {
+    display: flex;
+  }
+}

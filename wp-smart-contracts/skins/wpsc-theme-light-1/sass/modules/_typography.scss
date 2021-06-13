@@ -1,0 +1,28 @@
+.main-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 900;
+}
+
+.secondary-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.third-title {
+  font-size: 16px;
+  color: $secondary-theme-color;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+
+  .main-title {
+    font-size: 44px;
+  }
+
+  .secondary-title {
+    font-size: 22px;
+  }
+}

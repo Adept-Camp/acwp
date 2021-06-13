@@ -1,0 +1,40 @@
+.breadcrumb {
+  margin-bottom: 80px;
+
+  .btn {
+    height: 35px;
+    color: $white;
+  }
+
+  .selected-page {
+    color: $theme-color;
+    font-weight: 300;
+    text-decoration: underline;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumb {
+    ul {
+      display: block;
+      text-align: center;
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      .separator {
+        display: none;
+      }
+    }
+  }
+}

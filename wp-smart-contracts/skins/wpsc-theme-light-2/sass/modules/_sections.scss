@@ -1,0 +1,41 @@
+.page-wrapper {
+  box-sizing: border-box;
+  color: $theme-color;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: #F9F9F9;
+
+  .page-wrapper-inner {
+    max-width: 1240px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  &.detail-wrapper {
+    .page-wrapper-inner {
+      max-width: 1280px;
+    }
+  }
+
+  .the-full-width-section {
+    width: 100%;
+    background-color: $white;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-wrapper-inner {
+    padding: 0 40px;
+  }
+}
+
+.separator-line {
+  width: 100%;
+  height: 1px;
+  background-color: $light-grey;
+  display: block;
+  margin: 22px 0;
+}

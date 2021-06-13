@@ -1,0 +1,51 @@
+.page-wrapper {
+  color: $white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #10131A;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .page-inner {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  &.detail-wrapper {
+    .page-inner {
+      max-width: 1280px;
+    }
+    
+  }
+}
+
+.author-style {
+  margin-bottom: 80px !important;
+  display: block;
+  .header,
+  a,
+  p {
+    color: $white !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-wrapper {
+    .page-inner {
+      padding: 0 30px;
+    }
+  }
+}
+
+.separator-line {
+  width: 100%;
+  height: 1px;
+  background-color: $light-grey;
+  display: block;
+  margin: 22px 0;
+}

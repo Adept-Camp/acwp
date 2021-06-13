@@ -1,0 +1,411 @@
+.detail-wrapper {
+  .breadcrumb {  
+
+     .breadcrumb-inner {padding: 6px 18px 6px 6px!important;}
+
+  }
+}
+//TOP SECTION
+.detail-top {
+  padding-bottom: 80px;
+
+  .top-inner {
+    background-color: $third-theme-color;
+    width: 100%;
+    border-radius: 10px;
+    padding: 60px 20px;
+
+    img {
+      box-shadow: 0 13px 22px 0 rgba(0,0,0,0.46);
+    }
+
+    .category {
+      display: flex;
+      position: relative;
+      left: -20px;
+    }
+    .cat-inner {
+      background-color: $fourd-theme-color;
+      color: $black;
+      height: 40px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px 0 15px;
+      font-size: 18px;
+
+      a {
+        color: $third-theme-color;
+        text-decoration: none;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.videoClass .nft-media,
+.videoClass .nft-media video {
+  width: 100%;
+  display: block;
+}
+
+.timer-container {
+  max-width: 500px;
+  display: flex;
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 4px #000000;
+    width: 77px;
+    height: 77px;
+    margin-right: 6px;
+    margin-top: 10px;
+
+    &.theDay {
+      border-color: #C42F3D;
+    }
+
+     &.theHour {
+      border-color: #1D79B5;
+    }
+
+    &.theMin {
+      border-color: #893BA9;
+    }
+
+    &.theSecond {
+      border-color: #F39D14;
+    }
+  }
+  h2 {
+     font-size: 15px;
+     font-weight: 500;
+  } 
+}
+
+.timer-container {
+  padding-top: 40px;
+  margin-bottom: 40px;
+
+  .timer {
+    padding-top: 20px;
+  }
+}
+
+p {
+  font-weight: 300;
+    line-height: 20px;
+}
+
+.detail-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .profile {
+    display: flex;
+    align-items: center;
+    color: $dark-grey;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    a {
+      margin-left: 8px;
+    }
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 60px;
+    font-weight: 600;
+  }
+  
+}
+
+
+
+.detail-top {
+
+  .right-side {
+
+    .tag-container {
+      margin-top: 6px;
+      margin-bottom: 0;
+    }
+
+    .title {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      color: $dark-grey;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+
+    .ui.grid {
+      margin-bottom: 40px;
+    }
+
+    .timer {
+      padding-top: 20px;
+      display: flex;
+
+      div {
+        margin-right: 10px;
+      }
+    }
+
+  }
+
+}
+
+.two-column,
+.one-column {
+  display: flex;
+  width: 100%;
+
+  .btn {
+    margin-bottom: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col {
+    width: 50%;
+  }
+}
+
+.two-column {
+  .column-left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .column-right {
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+.one-column{
+
+  .column {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    margin-right: 8px;
+  }
+}
+
+.detail-feature-title {
+  font-size: 14px;
+}
+.feature-label {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.feature-label-link {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: $theme-color;
+  margin-bottom: 8px;
+}
+
+.description {
+  margin-bottom: 40px;
+}
+
+.detail .auction-text,
+.detail .active-auction {
+  display: none;
+}
+
+//BOTTOM SECTION
+.detail-bottom {
+  .tag-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+}
+
+.table-header {
+  background-color: $fourd-theme-color;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  color: $black;
+  height: 35px;
+
+  .table-left {
+    width: 70%;
+    display: flex;
+  }
+
+  .table-right {
+    width: 30%;
+    text-align: right;
+  }
+}
+
+.history-container {
+
+  .ui.raised.segment {
+    box-shadow: none;
+    border: none;
+    border-bottom: solid 1px $theme-color ;
+    border-radius: 0;
+    padding: 10px;
+
+    .label,
+    .detail {
+      background: transparent !important;
+    }
+
+    .label {
+      padding: 0;
+
+      img {
+        position: relative;
+        top: 11px;
+      }
+    }
+
+    .detail {
+      width: 100%;
+      margin-left: 21px;
+      margin-top: 2px;
+
+      a {
+        color: $theme-color;
+        font-weight: 500;
+      }
+    }
+
+    .user.icon {
+      display: none;
+    }
+
+    .ui.top.right.attached.label {
+      top: 22px;
+      color: $theme-color;
+      font-weight: 500;
+      font-size: 18px;
+      right: 10px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .timer-container {
+    max-width: 500px;
+    display: flex; 
+  }
+  .detail-top {
+    display: flex;
+
+    .right-side {
+      max-width: 50%;
+      width: 100%;
+      padding-left: 40px;
+    }
+  }
+
+  .detail-bottom {
+    display: flex;
+
+    .bottom-left {
+      width: 60%;
+      padding-right: 40px;
+    }
+
+    .bottom-right {
+      width: 40%;
+      padding-top: 10px;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .timer-container {
+    .box {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    }  
+    h2 {
+     font-size: 18px;
+    }  
+  }
+  .detail-top {
+
+    .right-side {
+      max-width: 68.56%;
+      padding-left: 80px;
+    }
+  }
+
+  .detail-bottom {
+    .bottom-right {
+      padding-left: 40px;
+    }
+  }
+
+  .two-column {
+    margin-top: 40px;
+
+    .column-left {
+      width: 35%;
+      position: relative;
+
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        background-color: $light-grey;
+        right: 30px;
+      }
+    }
+    .column-right {
+      width: 65%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      .btn {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .one-column{
+
+    .column {
+      display: flex !important;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      margin-right: 8px;
+    }
+  }
+}
